@@ -219,11 +219,13 @@ footer {
 @media (max-width: 768px) {
 
   .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 120px 6% 40px;
-    gap: 30px;
-  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;      /* CENTRATURA VERTICALE */
+  justify-content: space-between;
+  padding: 0 8%;
+  position: relative;
+}
 
   .hero h1 {
     font-size: 36px;
