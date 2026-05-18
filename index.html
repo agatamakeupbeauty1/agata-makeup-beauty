@@ -1,136 +1,177 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Agata Makeup Beauty</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agata Makeup Beauty</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<!-- DECOR UI CIRCLES -->
-<div class="bg-circles">
-  <span></span>
-  <span></span>
-  <span></span>
+<div class="bg">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
 </div>
 
+<!-- NAV -->
 <header class="nav">
-  <div class="logo">AGATA</div>
+  <div class="logo">Agata<span>Beauty</span></div>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#servizi">Servizi</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="prenota.html">Prenota</a>
+    <a href="#">Servizi</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contatti</a>
   </nav>
 
-  <button class="btn-primary">Prenota ora</button>
+  <button class="cta">Prenota ora</button>
 </header>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-box">
 
-  <div class="hero-text">
-    <div class="chip">MAKEUP • SKINCARE • ART</div>
+    <div class="hero-bg"></div>
 
-    <h1>
-      Beauty that feels<br>
-      like identity.
-    </h1>
+    <h1>Makeup che valorizza<br><span>la tua bellezza naturale</span></h1>
 
     <p>
-      Un’estetica costruita su luce, pelle e identità.
-      Non trasformazione — definizione.
+      Look bridal, glow e soft glam pensati per esaltare i lineamenti senza coprirli.
+      Eleganza, luce e armonia in ogni dettaglio.
     </p>
 
-    <button class="btn-primary">Scopri i servizi</button>
-  </div>
+    <div class="chips">
+      <div class="chip active">Bridal</div>
+      <div class="chip">Glam</div>
+      <div class="chip">Natural</div>
+      <div class="chip">Eventi</div>
+    </div>
 
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
-  </div>
+    <button class="hero-cta">Scopri i servizi</button>
 
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="strip">
+  <div>✨ Oltre 200 clienti soddisfatte</div>
+  <div>💍 Specializzazione bridal & cerimonie</div>
+  <div>📸 Esperienza in shooting professionali</div>
 </section>
 
 <!-- SERVICES -->
-<section class="section" id="servizi">
-
-  <h2 class="section-title">Servizi</h2>
+<section class="section">
+  <h2 class="title">Servizi</h2>
 
   <div class="grid">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8">
-      <h3>Event Beauty</h3>
-      <p>Look editoriali per eventi e shooting.</p>
+      <div class="icon">💍</div>
+      <h3>Bridal Makeup</h3>
+      <p>Makeup studiato per durata, luce e fotografia perfetta durante tutto il matrimonio.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1526045478516-99145907023c">
-      <h3>Social Aesthetic</h3>
-      <p>Makeup pensato per contenuti digitali.</p>
+      <div class="icon">✨</div>
+      <h3>Glow Natural</h3>
+      <p>Pelle uniforme, luminosa e naturale con effetto “no makeup makeup” raffinato.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31">
-      <h3>Skin Design</h3>
-      <p>Cura pelle e routine personalizzate.</p>
+      <div class="icon">📸</div>
+      <h3>Editorial</h3>
+      <p>Makeup creativo e tecnico per shooting fotografici e progetti moda.</p>
     </div>
 
   </div>
-
 </section>
 
-<!-- SPLIT -->
-<section class="split">
+<!-- BEFORE / AFTER -->
+<section class="section">
+  <h2 class="title">Before / After</h2>
 
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+  <div class="before-after">
+    <div class="box">Pelle naturale</div>
+    <div class="box after">Look valorizzato</div>
   </div>
+</section>
 
-  <div class="split-text">
-    <h2>Estetica costruita su misura</h2>
-    <p>
-      Ogni volto ha una struttura. Ogni luce una direzione.
-      Il makeup è progettazione visiva.
-    </p>
+<!-- PRICING -->
+<section class="section">
+  <h2 class="title">Pacchetti</h2>
+
+  <div class="grid">
+
+    <div class="card price">
+      <h3>Basic</h3>
+      <p>Makeup professionale per eventi e occasioni speciali</p>
+      <div class="price-tag">€50</div>
+    </div>
+
+    <div class="card price highlight">
+      <h3>Bridal</h3>
+      <p>Prova + makeup giorno matrimonio con durata e fotografia perfetta</p>
+      <div class="price-tag">€180</div>
+    </div>
+
+    <div class="card price">
+      <h3>Premium</h3>
+      <p>Consulenza skincare + makeup completo personalizzato</p>
+      <div class="price-tag">€120</div>
+    </div>
+
   </div>
-
 </section>
 
-<!-- PORTFOLIO -->
-<section class="section" id="portfolio">
+<!-- TESTIMONIALS -->
+<section class="section">
+  <h2 class="title">Recensioni</h2>
 
-  <h2 class="section-title">Portfolio</h2>
+  <div class="grid">
 
-  <div class="gallery">
+    <div class="card">
+      <p>"Un risultato naturale ma super elegante, mi sono sentita me stessa."</p>
+      <span>- Giulia</span>
+    </div>
 
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
-    <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8">
-    <img src="https://images.unsplash.com/photo-1526045478516-99145907023c">
-    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937">
+    <div class="card">
+      <p>"Delicata, precisa e professionale. Makeup perfetto fino a sera."</p>
+      <span>- Martina</span>
+    </div>
+
+    <div class="card">
+      <p>"Ha valorizzato il mio viso senza stravolgerlo, risultato top."</p>
+      <span>- Sara</span>
+    </div>
 
   </div>
-
 </section>
 
-<!-- CTA -->
-<section class="cta">
-
-  <h2>Pronta a riscrivere la tua immagine?</h2>
-  <p>Prenota una consulenza e costruisci la tua identità visiva.</p>
-
-  <button class="btn-primary">Prenota ora</button>
-
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <h2>Valorizza la tua bellezza naturale</h2>
+  <p>Prenota il tuo appuntamento e crea un look pensato per te.</p>
+  <button>Prenota ora</button>
 </section>
 
-<footer>
-  <p>© 2026 Agata Makeup Beauty</p>
-</footer>
+<script>
+const elements = document.querySelectorAll('.card, .hero-box, .section, .box');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.15 });
+
+elements.forEach(el => {
+  el.classList.add('hidden');
+  observer.observe(el);
+});
+</script>
 
 </body>
 </html>
