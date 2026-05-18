@@ -147,6 +147,7 @@ nav a.active::after{
 
 .hero-box h1 span{
   background:linear-gradient(90deg,#ff6fa3,#ffb6d5);
+  background-clip:text;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
