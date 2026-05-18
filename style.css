@@ -46,15 +46,12 @@ body{
   position:sticky;
   top:0;
   z-index:10;
-
   display:flex;
   justify-content:space-between;
   align-items:center;
-
   padding:22px 60px;
   background:rgba(255,255,255,0.6);
   backdrop-filter: blur(14px);
-
   border-bottom:1px solid #f3d6e6;
 }
 
@@ -72,10 +69,27 @@ nav a{
   text-decoration:none;
   color:#777;
   transition:0.3s;
+  position:relative;
 }
 
 nav a:hover{
   color:#ff6fa3;
+}
+
+nav a.active{
+  color:#ff6fa3;
+  font-weight:600;
+}
+
+nav a.active::after{
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:100%;
+  height:2px;
+  background:linear-gradient(90deg,#ff6fa3,#ffb6d5);
+  border-radius:2px;
 }
 
 .cta{
@@ -94,7 +108,7 @@ nav a:hover{
 }
 
 /* =========================
-   HERO (FIXED + CLEAN)
+   HERO
 ========================= */
 .hero{
   position:relative;
@@ -103,35 +117,22 @@ nav a:hover{
   background:#fff7fb;
 }
 
-/* IMMAGINE HERO CON FADE SOLO SU IMMAGINE */
 .hero::before{
   content:"";
   position:absolute;
   top:0;
   right:0;
-
   width:65%;
   height:100%;
-
   background:url("assets/immagine_1.jpg") center/cover no-repeat;
   opacity:0.95;
 
-  -webkit-mask-image: linear-gradient(
-    to left,
-    rgba(0,0,0,1) 35%,
-    rgba(0,0,0,0)
-  );
-
-  mask-image: linear-gradient(
-    to left,
-    rgba(0,0,0,1) 35%,
-    rgba(0,0,0,0)
-  );
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 35%, rgba(0,0,0,0));
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 35%, rgba(0,0,0,0));
 
   z-index:0;
 }
 
-/* TESTO SEMPRE SOPRA */
 .hero-box{
   position:relative;
   z-index:2;
@@ -176,7 +177,6 @@ nav a:hover{
   font-size:13px;
   color:#777;
   transition:0.3s;
-  box-shadow:0 5px 15px rgba(0,0,0,0.03);
 }
 
 .chip:hover{
@@ -209,18 +209,16 @@ nav a:hover{
 }
 
 /* =========================
-   SOCIAL STRIP
+   STRIP
 ========================= */
 .strip{
   display:flex;
   justify-content:center;
   gap:40px;
   padding:18px;
-
   background:#fff;
   border-top:1px solid #f3d6e6;
   border-bottom:1px solid #f3d6e6;
-
   color:#777;
   font-size:14px;
 }
@@ -239,7 +237,7 @@ nav a:hover{
 }
 
 /* =========================
-   GRID + CARD
+   GRID
 ========================= */
 .grid{
   display:grid;
@@ -252,9 +250,9 @@ nav a:hover{
   border:1px solid #f3d6e6;
   border-radius:24px;
   padding:26px;
-
   box-shadow:0 10px 30px rgba(0,0,0,0.04);
   transition:0.5s cubic-bezier(.2,.8,.2,1);
+  will-change:transform;
 }
 
 .card:hover{
@@ -274,11 +272,9 @@ nav a:hover{
   height:260px;
   border-radius:20px;
   background:#ffe3ef;
-
   display:flex;
   align-items:center;
   justify-content:center;
-
   font-weight:600;
   color:#777;
 }
@@ -338,7 +334,7 @@ nav a:hover{
 }
 
 /* =========================
-   REVEAL ANIMATION
+   ANIMATION
 ========================= */
 .hidden{
   opacity:0;
@@ -351,20 +347,4 @@ nav a:hover{
   opacity:1;
   transform:translateY(0);
   filter:blur(0);
-}
-nav a.active{
-  color:#ff6fa3;
-  font-weight:600;
-  position:relative;
-}
-
-nav a.active::after{
-  content:"";
-  position:absolute;
-  bottom:-6px;
-  left:0;
-  width:100%;
-  height:2px;
-  background:linear-gradient(90deg,#ff6fa3,#ffb6d5);
-  border-radius:2px;
 }
