@@ -348,3 +348,80 @@ nav a.active::after{
   transform:translateY(0);
   filter:blur(0);
 }
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero{
+  position:relative;
+  padding:
+  140px
+  80px
+  80px;
+
+  overflow:hidden;
+}
+
+.page-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+  radial-gradient(
+    circle at top right,
+    rgba(255,182,213,0.35),
+    transparent 40%
+  );
+
+  z-index:0;
+}
+
+.page-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+}
+
+.mini-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:10px 16px;
+
+  border-radius:999px;
+
+  background:
+  rgba(255,255,255,0.8);
+
+  border:
+  1px solid #f3d6e6;
+
+  color:#ff6fa3;
+
+  font-size:14px;
+  font-weight:600;
+
+  margin-bottom:24px;
+
+  backdrop-filter:blur(12px);
+}
+
+.page-hero h1{
+  font-size:64px;
+  line-height:1;
+  letter-spacing:-2px;
+  color:#222;
+}
+
+.page-hero p{
+  margin-top:20px;
+
+  max-width:600px;
+
+  font-size:18px;
+  line-height:1.7;
+
+  color:#777;
+}

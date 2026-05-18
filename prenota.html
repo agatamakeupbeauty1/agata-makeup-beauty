@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Prenota</title>
+<title>Prenota - Agata Beauty</title>
 <link rel="stylesheet" href="style.css"/>
 </head>
 
@@ -16,52 +16,76 @@
 </div>
 
 <header class="nav">
-
-  <div class="logo">
-    Agata<span>Beauty</span>
-  </div>
+  <div class="logo">Agata<span>Beauty</span></div>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="servizi.html">Servizi</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="chi-sono.html">Chi sono</a>
-    <a href="prenota.html">Prenota</a>
+    <a href="prenota.html" class="active">Prenota</a>
   </nav>
 
-  <a href="prenota.html" class="cta">
-    Prenota ora
-  </a>
-
+  <a href="#calendly" class="cta">Seleziona orario</a>
 </header>
 
-<section class="section">
+<!-- HERO MINIMA (focus + riduzione ansia) -->
+<section class="section" style="text-align:center;padding-bottom:30px;">
 
-  <h1 class="title">Prenota il tuo look</h1>
+  <h1 class="title" style="font-size:28px;">
+    Prenota il tuo appuntamento
+  </h1>
 
-  <div class="card">
-    <p>
-      Ogni appuntamento è personalizzato e con disponibilità limitata.
-    </p>
+  <p style="color:#777;max-width:600px;margin:0 auto;line-height:1.6;">
+    Scegli giorno e orario in pochi secondi.
+    Riceverai conferma immediata senza attese.
+  </p>
+
+  <div style="margin-top:18px;color:#ff6fa3;font-weight:600;">
+    ⏳ Posti limitati ogni settimana
   </div>
 
 </section>
 
-<section class="section">
+<!-- CALENDLY ZONE -->
+<section class="section" id="calendly" style="padding-top:10px;">
 
-  <div class="card" style="text-align:center; padding:40px;">
-    <h2>Prenotazione diretta</h2>
+  <div class="card" style="padding:0; overflow:hidden; border-radius:24px;">
 
-    <p>Apri il calendario e scegli il tuo slot</p>
+    <div class="calendly-inline-widget"
+         data-url="https://calendly.com/agatamakeupbeauty1/30min"
+         style="min-width:320px;height:750px;">
+    </div>
 
-    <button class="cta"
-      onclick="window.location.href='https://calendly.com/agatamakeupbeauty1/30min'">
-      Apri calendario
-    </button>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   </div>
 
 </section>
 
+<!-- TRUST BAR -->
+<section class="section" style="padding-top:30px;text-align:center;">
+
+  <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;color:#777;font-size:14px;">
+
+    <div>✔ Conferma immediata</div>
+    <div>✔ Cancellazione flessibile</div>
+    <div>✔ Servizio personalizzato</div>
+
+  </div>
+
+</section>
+
+<!-- MICRO REASSURANCE CTA -->
+<section class="cta-section">
+
+  <h2>Hai già scelto il tuo slot?</h2>
+  <p>Completa la prenotazione in meno di 1 minuto</p>
+
+  <a href="#calendly">Vai al calendario</a>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
