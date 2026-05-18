@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Agata Makeup Beauty</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"/>
 </head>
 
@@ -13,10 +15,9 @@
   <div class="logo">AGATA</div>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="servizi.html">Servizi</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="chi-sono.html">Chi sono</a>
+    <a href="#">Home</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="prenota.html">Prenota</a>
   </nav>
 
@@ -25,90 +26,113 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <p class="tag">MAKEUP • BEAUTY • STUDIO</p>
 
+  <div class="hero-text">
     <h1>
-      Eleganza che si vede.<br/>
-      Sicurezza che si sente.
+      Beauty that feels<br>
+      natural, elegant, you.
     </h1>
 
-    <p class="sub">
-      Makeup professionale e skincare personalizzata per valorizzare la tua immagine nella vita reale e sui social.
+    <p>
+      Makeup e skincare pensati per valorizzare la tua identità,
+      non trasformarla.
     </p>
 
-    <div class="hero-actions">
-      <button class="btn-primary">Prenota consulenza</button>
-      <button class="btn-secondary">Scopri i servizi</button>
-    </div>
+    <button class="btn-primary" style="margin-top:25px;">
+      Scopri i servizi
+    </button>
   </div>
 
-  <div class="hero-image"></div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+  </div>
+
 </section>
 
 <!-- SERVICES -->
-<section class="section">
+<section class="section" id="servizi">
+
   <h2 class="section-title">Servizi</h2>
 
   <div class="grid">
+
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8">
       <h3>Makeup Eventi</h3>
-      <p>Look eleganti per matrimoni, eventi e shooting fotografici.</p>
+      <p>Matrimoni, shooting, eventi speciali.</p>
     </div>
 
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1526045478516-99145907023c">
       <h3>Makeup Social</h3>
-      <p>Perfetto per Instagram, TikTok e contenuti digitali.</p>
+      <p>Look perfetti per contenuti social.</p>
     </div>
 
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31">
       <h3>Skincare</h3>
-      <p>Analisi pelle e routine personalizzate per risultati reali.</p>
+      <p>Routine personalizzate per la pelle.</p>
     </div>
+
   </div>
+
 </section>
 
-<!-- ABOUT -->
+<!-- WHY ME -->
 <section class="split">
-  <div class="split-img"></div>
+
+  <div class="split-img">
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2">
+  </div>
 
   <div class="split-text">
+
     <h2>Un approccio moderno alla bellezza</h2>
 
     <p>
       Non è solo trucco. È costruzione della tua immagine.
-      Ogni dettaglio è studiato per valorizzarti in modo naturale.
+      Ogni dettaglio è pensato per valorizzarti in modo naturale,
+      elegante e coerente con chi sei.
     </p>
 
-    <button class="btn-primary">Scopri di più</button>
   </div>
+
 </section>
 
-<!-- GALLERY -->
-<section class="section soft">
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
+
   <h2 class="section-title">Portfolio</h2>
 
   <div class="gallery">
-    <div class="img"></div>
-    <div class="img"></div>
-    <div class="img"></div>
-    <div class="img"></div>
+
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+    <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8">
+    <img src="https://images.unsplash.com/photo-1526045478516-99145907023c">
+    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937">
+
   </div>
+
 </section>
 
 <!-- CTA -->
 <section class="cta">
-  <h2>Pronta a cambiare il tuo look?</h2>
-  <p>Prenota la tua consulenza e crea la tua identità estetica.</p>
-  <button class="btn-primary big">Prenota ora</button>
+
+  <h2>Pronta a sentirti più sicura di te?</h2>
+
+  <p>
+    Prenota la tua consulenza e creiamo il tuo look ideale.
+  </p>
+
+  <button class="btn-primary" style="margin-top:20px;">
+    Prenota ora
+  </button>
+
 </section>
 
 <footer>
   <p>© 2026 Agata Makeup Beauty</p>
 </footer>
-  <a class="whatsapp-float" href="https://wa.me/39XXXXXXXXXX" target="_blank">
-  WhatsApp
-</a>
 
 </body>
 </html>
