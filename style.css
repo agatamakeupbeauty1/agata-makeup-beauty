@@ -124,7 +124,7 @@ nav a.active::after{
   right:0;
   width:65%;
   height:100%;
-  background:url("assets/immagine_1.jpg") center/cover no-repeat;
+  background:url("assets/immagine_1.jpg") center 20%/cover no-repeat;
   opacity:0.95;
 
   -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 35%, rgba(0,0,0,0));

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agata Makeup Beauty</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Agata Makeup Beauty</title>
+<link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
@@ -15,31 +15,27 @@
   <span class="blob b3"></span>
 </div>
 
-<!-- NAV -->
 <header class="nav">
   <div class="logo">Agata<span>Beauty</span></div>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Servizi</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contatti</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="servizi.html">Servizi</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="chi-sono.html">Chi sono</a>
+    <a href="prenota.html">Prenota</a>
   </nav>
 
-  <button class="cta">Prenota ora</button>
+  <a href="prenota.html" class="cta">Prenota ora</a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-box">
-
-    <div class="hero-bg"></div>
 
     <h1>Makeup che valorizza<br><span>la tua bellezza naturale</span></h1>
 
     <p>
       Look bridal, glow e soft glam pensati per esaltare i lineamenti senza coprirli.
-      Eleganza, luce e armonia in ogni dettaglio.
     </p>
 
     <div class="chips">
@@ -54,14 +50,12 @@
   </div>
 </section>
 
-<!-- SOCIAL PROOF -->
 <section class="strip">
   <div>✨ Oltre 200 clienti soddisfatte</div>
-  <div>💍 Specializzazione bridal & cerimonie</div>
-  <div>📸 Esperienza in shooting professionali</div>
+  <div>💍 Bridal specialist</div>
+  <div>📸 Shooting professionali</div>
 </section>
 
-<!-- SERVICES -->
 <section class="section">
   <h2 class="title">Servizi</h2>
 
@@ -70,108 +64,49 @@
     <div class="card">
       <div class="icon">💍</div>
       <h3>Bridal Makeup</h3>
-      <p>Makeup studiato per durata, luce e fotografia perfetta durante tutto il matrimonio.</p>
+      <p>Makeup da sposa a lunga durata.</p>
     </div>
 
     <div class="card">
       <div class="icon">✨</div>
       <h3>Glow Natural</h3>
-      <p>Pelle uniforme, luminosa e naturale con effetto “no makeup makeup” raffinato.</p>
+      <p>Effetto pelle luminosa e naturale.</p>
     </div>
 
     <div class="card">
       <div class="icon">📸</div>
       <h3>Editorial</h3>
-      <p>Makeup creativo e tecnico per shooting fotografici e progetti moda.</p>
+      <p>Makeup per shooting e moda.</p>
     </div>
 
   </div>
 </section>
 
-<!-- BEFORE / AFTER -->
 <section class="section">
   <h2 class="title">Before / After</h2>
 
   <div class="before-after">
-    <div class="box">Pelle naturale</div>
-    <div class="box after">Look valorizzato</div>
+    <div class="box">Before</div>
+    <div class="box after">After</div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="section">
-  <h2 class="title">Pacchetti</h2>
-
-  <div class="grid">
-
-    <div class="card price">
-      <h3>Basic</h3>
-      <p>Makeup professionale per eventi e occasioni speciali</p>
-      <div class="price-tag">€50</div>
-    </div>
-
-    <div class="card price highlight">
-      <h3>Bridal</h3>
-      <p>Prova + makeup giorno matrimonio con durata e fotografia perfetta</p>
-      <div class="price-tag">€180</div>
-    </div>
-
-    <div class="card price">
-      <h3>Premium</h3>
-      <p>Consulenza skincare + makeup completo personalizzato</p>
-      <div class="price-tag">€120</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
 <section class="section">
   <h2 class="title">Recensioni</h2>
 
   <div class="grid">
-
-    <div class="card">
-      <p>"Un risultato naturale ma super elegante, mi sono sentita me stessa."</p>
-      <span>- Giulia</span>
-    </div>
-
-    <div class="card">
-      <p>"Delicata, precisa e professionale. Makeup perfetto fino a sera."</p>
-      <span>- Martina</span>
-    </div>
-
-    <div class="card">
-      <p>"Ha valorizzato il mio viso senza stravolgerlo, risultato top."</p>
-      <span>- Sara</span>
-    </div>
-
+    <div class="card"><p>"Perfetto e naturale"</p><span>- Giulia</span></div>
+    <div class="card"><p>"Durata incredibile"</p><span>- Martina</span></div>
+    <div class="card"><p>"Super professionale"</p><span>- Sara</span></div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
 <section class="cta-section">
   <h2>Valorizza la tua bellezza naturale</h2>
-  <p>Prenota il tuo appuntamento e crea un look pensato per te.</p>
-  <button>Prenota ora</button>
+  <p>Prenota ora il tuo appuntamento</p>
+  <a href="prenota.html" class="cta">Prenota ora</a>
 </section>
 
-<script>
-const elements = document.querySelectorAll('.card, .hero-box, .section, .box');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  });
-}, { threshold: 0.15 });
-
-elements.forEach(el => {
-  el.classList.add('hidden');
-  observer.observe(el);
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
