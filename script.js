@@ -7,6 +7,13 @@ if (menuToggle && nav) {
     const isOpen = nav.classList.toggle("open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
+
+  nav.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
 }
 
 if ("IntersectionObserver" in window) {
