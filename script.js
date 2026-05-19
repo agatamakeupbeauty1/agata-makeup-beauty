@@ -1,29 +1,25 @@
-// HEADER SCROLL EFFECT
-const header = document.getElementById("header");
-
-window.addEventListener("scroll", () => {
-  header.classList.toggle("scrolled", window.scrollY > 50);
-});
-
-// MOBILE MENU
-const toggle = document.getElementById("menu-toggle");
 const nav = document.querySelector(".nav");
+const menuToggle = document.querySelector(".menu-toggle");
+const reveals = document.querySelectorAll(".reveal");
 
-if (toggle) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+if (menuToggle && nav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
 
-// SCROLL REVEAL (FIX GIUSTO)
-const pages = document.querySelectorAll(".page");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-}, { threshold: 0.15 });
-
-pages.forEach(p => observer.observe(p));
+  reveals.forEach((el) => observer.observe(el));
+} else {
+  reveals.forEach((el) => el.classList.add("active"));
+}

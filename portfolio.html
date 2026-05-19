@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Portfolio</title>
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio Agata Beauty: bridal makeup, soft glam, editorial e beauty look."/>
+  <title>Portfolio | Agata Beauty</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
+  <div class="site-shell">
+    <header class="nav">
+      <a class="logo" href="index.html">Agata<span>Beauty</span></a>
+      <nav class="nav-links" aria-label="Navigazione principale">
+        <a href="index.html">Home</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="prenota.html" class="btn btn-primary">Prenota ora</a>
+        <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">+</button>
+      </div>
+    </header>
 
-<div class="bg">
-  <span class="blob b1"></span>
-  <span class="blob b2"></span>
-  <span class="blob b3"></span>
-</div>
+    <main>
+      <section class="section page-hero reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Look puliti, fotografici, riconoscibili.</h1>
+        <p>Una gallery piu editoriale comunica subito qualita. Ogni immagine ha un contesto, cosi il portfolio non sembra un archivio casuale.</p>
+      </section>
 
-<header class="nav">
+      <section class="section">
+        <div class="portfolio-grid">
+          <article class="portfolio-tile tall reveal">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=85" alt="Makeup editoriale luminoso"/>
+            <div class="tile-caption"><strong>Editorial glow</strong><span>pelle luminosa, labbra nude, finish camera ready</span></div>
+          </article>
+          <div>
+            <article class="portfolio-tile reveal">
+              <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=1000&q=85" alt="Pennelli e prodotti makeup"/>
+              <div class="tile-caption"><strong>Beauty detail</strong><span>texture controllate e prodotti professionali</span></div>
+            </article>
+            <article class="portfolio-tile reveal stack-gap">
+              <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1000&q=85" alt="Postazione makeup professionale"/>
+              <div class="tile-caption"><strong>Soft bridal</strong><span>eleganza naturale per cerimonie</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  <div class="logo">
-    Agata<span>Beauty</span>
+      <section class="section">
+        <div class="section-head reveal">
+          <h2>Prima e dopo, senza promesse finte.</h2>
+          <p>Il focus e sulla valorizzazione: luce, uniformita, definizione e armonia. Il viso resta riconoscibile.</p>
+        </div>
+        <div class="grid">
+          <article class="card card-img reveal">
+            <img src="assets/immagine_1.jpg" alt="Risultato makeup naturale"/>
+            <div class="card-body">
+              <h3>Base glow</h3>
+              <p>Correzione leggera, punti luce controllati e pelle dall'aspetto fresco.</p>
+            </div>
+          </article>
+          <article class="card card-img reveal">
+            <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=1000&q=85" alt="Dettaglio beauty naturale"/>
+            <div class="card-body">
+              <h3>Occhi definiti</h3>
+              <p>Intensita modulata in base a forma dell'occhio, occasione e luce.</p>
+            </div>
+          </article>
+          <article class="card card-img reveal">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1000&q=85" alt="Prodotti beauty su tavolo"/>
+            <div class="card-body">
+              <h3>Finish foto</h3>
+              <p>Texture controllate per evitare effetto lucido e mantenere tridimensionalita.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section reveal">
+        <h2>Il prossimo look puo essere il tuo.</h2>
+        <p>Invita la cliente a passare dal desiderio all'azione con uno slot chiaro e un percorso guidato.</p>
+        <a href="prenota.html" class="btn btn-secondary">Controlla disponibilita</a>
+      </section>
+    </main>
   </div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="servizi.html">Servizi</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="chi-sono.html">Chi sono</a>
-    <a href="prenota.html">Prenota</a>
-  </nav>
-
-  <a href="prenota.html" class="cta">
-    Prenota ora
-  </a>
-
-</header>
-
-<section class="section">
-  <h1 class="title">Portfolio</h1>
-  <p class="sub">Look editorial, bridal e natural glow.</p>
-</section>
-
-<section class="section">
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" style="width:100%;border-radius:16px;">
-      <h3>Editorial Glow</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1526045478516-99145907023c" style="width:100%;border-radius:16px;">
-      <h3>Soft Bridal</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8" style="width:100%;border-radius:16px;">
-      <h3>Natural Beauty</h3>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="section">
-
-  <h2 class="title">Before / After</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" style="width:100%;border-radius:16px;">
-      <p>Before</p>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1526045478516-99145907023c" style="width:100%;border-radius:16px;">
-      <p>After</p>
-    </div>
-
-  </div>
-
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
