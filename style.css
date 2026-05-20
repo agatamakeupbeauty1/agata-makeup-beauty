@@ -452,25 +452,23 @@ h1{
 .footer a{text-decoration:none}
 
 .designer-credit{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:16px;
-  padding:18px clamp(20px,5vw,72px);
-  color:#fff;
-  background:#008448;
-}
-
-.designer-credit span{
+  padding:16px clamp(20px,5vw,72px) 24px;
+  color:var(--muted);
   font-size:12px;
-  font-weight:800;
-  letter-spacing:.12em;
+  font-weight:700;
+  letter-spacing:.08em;
+  line-height:1.5;
+  text-align:center;
   text-transform:uppercase;
 }
 
-.designer-credit img{
-  width:142px;
-  height:auto;
+.designer-credit span{
+  color:#008448;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:0;
+  text-transform:none;
 }
 
 .reveal{
@@ -534,10 +532,5 @@ h1{
   .card-img img{height:340px}
   .footer{display:block}
   .footer-links{margin-top:16px}
-  .designer-credit{
-    flex-direction:column;
-    gap:8px;
-    text-align:center;
-  }
-  .designer-credit img{width:132px}
+  .designer-credit{padding-bottom:22px}
 }
