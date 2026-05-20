@@ -6,7 +6,7 @@
   <meta name="description" content="Servizi makeup Agata Beauty: bridal, eventi, shooting e consulenze beauty."/>
   <title>Servizi | Agata Beauty</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css?v=services"/>
 </head>
 <body>
   <div class="site-shell">
@@ -26,64 +26,101 @@
     </header>
 
     <main>
-      <section class="section page-hero reveal">
-        <span class="eyebrow">Percorsi beauty</span>
-        <h1>Makeup su misura per ogni occasione.</h1>
-        <p>Sposa, eventi, shooting o consulenze beauty: ogni servizio viene adattato alla tua pelle, al tuo stile e al momento che stai vivendo.</p>
+      <section class="services-hero reveal">
+        <div class="services-hero-copy">
+          <span class="eyebrow">Percorsi beauty</span>
+          <h1>Scegli il look giusto senza perdere tempo tra mille dubbi.</h1>
+          <p class="lead">Tre percorsi chiari per sposa, eventi e shooting: ti aiuto a capire cosa serve davvero, quanto tempo bloccare e come arrivare pronta.</p>
+          <div class="hero-actions">
+            <a href="prenota.html" class="btn btn-primary">Prenota una consulenza</a>
+            <a href="#percorsi" class="btn btn-secondary">Confronta i servizi</a>
+          </div>
+        </div>
+        <aside class="conversion-panel">
+          <strong>Consiglio rapido</strong>
+          <p>Se hai una data già fissata, blocca prima lo slot. I dettagli del look si definiscono dopo, con calma.</p>
+          <a href="prenota.html">Verifica disponibilità</a>
+        </aside>
       </section>
 
-      <section class="section">
-        <div class="grid">
-          <article class="card reveal">
-            <h3>Bridal Experience</h3>
-            <p>Per la sposa che vuole sentirsi elegante, serena e fotografata al meglio per tutta la giornata.</p>
+      <section class="service-picker" aria-label="Scelta rapida del servizio">
+        <a href="#bridal"><strong>Sposa</strong><span>Prova + giorno evento</span></a>
+        <a href="#event"><strong>Evento</strong><span>Look pronto in 75 minuti</span></a>
+        <a href="#brand"><strong>Shooting</strong><span>Resa precisa in camera</span></a>
+      </section>
+
+      <section class="section services-showcase" id="percorsi">
+        <article class="service-offer service-offer-featured reveal" id="bridal">
+          <div>
+            <span class="eyebrow">Più richiesto</span>
+            <h2>Bridal Experience</h2>
+            <p>Per la sposa che vuole un look elegante, resistente e fedele al proprio viso, dalla prova fino al giorno del sì.</p>
             <ul class="feature-list">
               <li>Consulenza su stile, pelle e mood del matrimonio</li>
               <li>Prova makeup completa con scheda look</li>
               <li>Makeup giorno nozze e indicazioni per i ritocchi</li>
             </ul>
-            <div class="service-meta"><span>Da 250 EUR</span><span>3h circa</span></div>
+          </div>
+          <div class="offer-action">
+            <strong>Da 250 EUR</strong>
+            <span>Prova + giorno nozze</span>
+            <a href="prenota.html" class="btn btn-primary">Blocca la prova</a>
+          </div>
+        </article>
+
+        <div class="services-grid">
+          <article class="service-offer reveal" id="event">
+            <div>
+              <h2>Event Glow</h2>
+              <p>Per cerimonie, lauree, feste e contenuti social quando serve una presenza curata, luminosa e naturale.</p>
+              <ul class="feature-list">
+                <li>Preparazione pelle rapida</li>
+                <li>Base luminosa e occhi valorizzati</li>
+                <li>Finish long lasting e photo friendly</li>
+              </ul>
+            </div>
+            <div class="offer-action">
+              <strong>Da 75 EUR</strong>
+              <span>75 minuti</span>
+              <a href="prenota.html" class="btn btn-secondary">Prenota evento</a>
+            </div>
           </article>
-          <article class="card reveal">
-            <h3>Event Glow</h3>
-            <p>Per cerimonie, lauree, feste e contenuti social quando serve una presenza curata e naturale.</p>
-            <ul class="feature-list">
-              <li>Preparazione pelle rapida</li>
-              <li>Base luminosa e occhi valorizzati</li>
-              <li>Finish long lasting e photo friendly</li>
-            </ul>
-            <div class="service-meta"><span>Da 75 EUR</span><span>75 min</span></div>
-          </article>
-          <article class="card reveal">
-            <h3>Editorial & Brand</h3>
-            <p>Per shooting, campagne, creator e professioniste che hanno bisogno di resa precisa in camera.</p>
-            <ul class="feature-list">
-              <li>Analisi brief e reference</li>
-              <li>Makeup modulabile durante il set</li>
-              <li>Coordinamento con fotografo o stylist</li>
-            </ul>
-            <div class="service-meta"><span>Su preventivo</span><span>Set</span></div>
+          <article class="service-offer reveal" id="brand">
+            <div>
+              <h2>Editorial &amp; Brand</h2>
+              <p>Per shooting, campagne, creator e professioniste che hanno bisogno di controllo su texture, luce e resa colore.</p>
+              <ul class="feature-list">
+                <li>Analisi brief e foto di riferimento</li>
+                <li>Makeup modulabile durante il set</li>
+                <li>Coordinamento con fotografo o stylist</li>
+              </ul>
+            </div>
+            <div class="offer-action">
+              <strong>Su preventivo</strong>
+              <span>Set e produzioni</span>
+              <a href="contatti.html" class="btn btn-secondary">Parliamo del set</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section services-flow">
         <div class="section-head reveal">
-          <h2>Metodo in quattro passaggi.</h2>
-          <p>Ti accompagno passo dopo passo, così arrivi all'appuntamento con le idee chiare e senza stress.</p>
+          <h2>Dal dubbio alla data confermata.</h2>
         </div>
-        <div class="grid">
-          <article class="card reveal"><h3>01. Consulenza</h3><p>Parliamo di occasione, pelle, stile, abito, colori e aspettative.</p></article>
-          <article class="card reveal"><h3>02. Proposta look</h3><p>Definiamo un look coerente, realistico e adatto sia dal vivo che in foto.</p></article>
-          <article class="card reveal"><h3>03. Esecuzione</h3><p>Prodotti professionali, igiene, tecnica e tempi organizzati.</p></article>
-          <article class="card reveal"><h3>04. Ritocco</h3><p>Consigli e dettagli per mantenere il risultato durante la giornata.</p></article>
+        <div class="flow-grid">
+          <article class="card reveal"><span>01</span><h3>Mi racconti l'occasione</h3><p>Data, luogo, orari e stile che immagini.</p></article>
+          <article class="card reveal"><span>02</span><h3>Ti indirizzo</h3><p>Scegliamo il percorso più adatto senza aggiungere cose inutili.</p></article>
+          <article class="card reveal"><span>03</span><h3>Blocchi lo slot</h3><p>Ricevi conferma e arriviamo preparate all'appuntamento.</p></article>
         </div>
       </section>
 
-      <section class="cta-section reveal">
-        <h2>Non sai quale servizio scegliere?</h2>
-        <p>Prenota una consulenza o scrivimi qualche dettaglio: ti indirizzo io verso la soluzione più adatta.</p>
-        <a href="prenota.html" class="btn btn-secondary">Vai alla prenotazione</a>
+      <section class="services-final-cta reveal">
+        <div>
+          <span class="eyebrow">Prossimo passo</span>
+          <h2>Hai una data? Meglio bloccarla adesso.</h2>
+        </div>
+        <a href="prenota.html" class="btn btn-secondary">Prenota ora</a>
       </section>
     </main>
 

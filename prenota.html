@@ -6,7 +6,7 @@
   <meta name="description" content="Prenota un appuntamento con Agata Beauty per bridal makeup, eventi e consulenze beauty."/>
   <title>Prenota | Agata Beauty</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css?v=booking2"/>
 </head>
 <body>
   <div class="site-shell">
@@ -20,41 +20,94 @@
         <a href="contatti.html">Contatti</a>
       </nav>
       <div class="nav-actions">
-        <a href="#calendly" class="btn btn-primary">Seleziona orario</a>
         <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">+</button>
       </div>
     </header>
 
     <main>
-      <section class="section page-hero reveal">
-        <span class="eyebrow">Prenotazione</span>
-        <h1>Scegli lo slot, racconta l'occasione, ricevi conferma.</h1>
-        <p>Scegli un orario comodo e lascia nelle note i dettagli principali: data evento, luogo, servizio e preferenze.</p>
+      <section class="booking-hero reveal">
+        <div class="booking-hero-copy">
+          <span class="eyebrow">Prenotazione</span>
+          <h1>Blocca il tuo appuntamento e arriviamo preparate.</h1>
+          <p class="lead">Scegli un orario, raccontami occasione e dettagli principali, poi ricevi conferma e follow-up per definire servizio, tempi e preventivo.</p>
+          <div class="hero-actions">
+            <a href="#calendly" class="btn btn-primary">Seleziona orario</a>
+            <a href="servizi.html" class="btn btn-secondary">Rivedi i servizi</a>
+          </div>
+        </div>
+        <aside class="booking-hero-card">
+          <strong>Prima regola</strong>
+          <p>Se hai già una data, blocca lo slot. Il look si può perfezionare dopo, la disponibilità no.</p>
+          <div class="booking-mini-stats">
+            <span><b>30 min</b> consulenza</span>
+            <span><b>24h</b> follow-up</span>
+          </div>
+        </aside>
       </section>
 
-      <section class="section booking-panel" id="calendly">
-        <aside class="card reveal">
-          <h3>Prima di prenotare</h3>
-          <p>Inserisci nelle note data evento, tipo di servizio, luogo e orario entro cui devi essere pronta.</p>
-          <ul class="feature-list">
-            <li>Conferma automatica via Calendly</li>
-            <li>Possibilità di indicare preferenze e reference</li>
-            <li>Follow-up per definire dettagli e preventivo finale</li>
-            <li>Per matrimoni, meglio bloccare la prova con anticipo</li>
-          </ul>
-        </aside>
+      <section class="booking-steps" aria-label="Come funziona la prenotazione">
+        <article><span>01</span><strong>Scegli l'orario</strong><p>Calendario aggiornato, conferma automatica.</p></article>
+        <article><span>02</span><strong>Scrivi le note</strong><p>Data evento, luogo, servizio e preferenze.</p></article>
+        <article><span>03</span><strong>Ricevi conferma</strong><p>Ti ricontatto per rifinire i dettagli.</p></article>
+      </section>
+
+      <section class="section booking-panel booking-panel-rich" id="calendly">
+        <div class="booking-info">
+          <aside class="booking-checklist reveal">
+            <span class="eyebrow">Da inserire nelle note</span>
+            <h2>Più dettagli mi dai, più precisa sarà la consulenza.</h2>
+            <ul class="feature-list">
+              <li>Data, orario e luogo dell'evento</li>
+              <li>Servizio che ti interessa: sposa, evento o shooting</li>
+              <li>Orario entro cui devi essere pronta</li>
+              <li>Foto di riferimento, abito, mood o colori</li>
+            </ul>
+          </aside>
+          <div class="booking-side-grid">
+            <article class="card reveal">
+              <h3>Sposa?</h3>
+              <p>Blocca presto la prova: è il modo più semplice per arrivare al giorno del sì senza corse.</p>
+            </article>
+            <article class="card reveal">
+              <h3>Evento?</h3>
+              <p>Indica dress code, orario e tipo di luce: il look viene calibrato anche per le foto.</p>
+            </article>
+          </div>
+          <article class="booking-contact-strip reveal">
+            <strong>Non sai cosa scegliere?</strong>
+            <a href="contatti.html">Scrivimi prima</a>
+          </article>
+        </div>
+
         <div class="calendly-box reveal">
+          <div class="calendly-fallback">
+            <strong>Caricamento calendario...</strong>
+            <span>Se non compare entro pochi secondi, apri Calendly direttamente.</span>
+            <a href="https://calendly.com/agatamakeupbeauty1/30min">Apri Calendly</a>
+          </div>
           <div class="calendly-inline-widget" data-url="https://calendly.com/agatamakeupbeauty1/30min"></div>
           <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
       </section>
 
-      <section class="section">
-        <div class="grid">
-          <article class="card reveal"><h3>Conferma immediata</h3><p>Ricevi subito il riepilogo della richiesta e i dettagli dell'appuntamento.</p></article>
-          <article class="card reveal"><h3>Brief chiaro</h3><p>Le note aiutano a preparare una consulenza più precisa e professionale.</p></article>
-          <article class="card reveal"><h3>Meno messaggi</h3><p>Il calendario evita attese inutili e rende più semplice organizzare tutto.</p></article>
+      <section class="section booking-assurance">
+        <div class="section-head reveal">
+          <h2>Dopo la prenotazione sai già cosa succede.</h2>
         </div>
+        <div class="flow-grid">
+          <article class="card reveal"><span>Subito</span><h3>Riepilogo appuntamento</h3><p>Ricevi orario, servizio scelto e conferma della richiesta.</p></article>
+          <article class="card reveal"><span>Prima</span><h3>Brief mirato</h3><p>Raccolgo informazioni utili su pelle, stile, abito e necessità pratiche.</p></article>
+          <article class="card reveal"><span>Poi</span><h3>Preventivo chiaro</h3><p>Definiamo eventuali extra, spostamenti e timing finale.</p></article>
+        </div>
+      </section>
+
+      <section class="booking-final reveal">
+        <div>
+          <span class="eyebrow">Meglio non rimandare</span>
+          <h2>Le date belle si riempiono in fretta.</h2>
+          <p>Se stai organizzando un evento, bloccare il primo appuntamento ti evita messaggi infiniti e decisioni all'ultimo minuto.</p>
+        </div>
+        <a href="#calendly" class="btn btn-secondary">Torna al calendario</a>
       </section>
     </main>
 
@@ -71,6 +124,6 @@
     </footer>
     <p class="designer-credit">Design &amp; development by <span>green</span></p>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js?v=booking"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 const nav = document.querySelector(".nav");
 const menuToggle = document.querySelector(".menu-toggle");
 const reveals = document.querySelectorAll(".reveal");
+const calendlyBox = document.querySelector(".calendly-box");
 
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
@@ -29,4 +30,34 @@ if ("IntersectionObserver" in window) {
   reveals.forEach((el) => observer.observe(el));
 } else {
   reveals.forEach((el) => el.classList.add("active"));
+}
+
+if (calendlyBox) {
+  const markCalendlyLoaded = () => {
+    const iframe = calendlyBox.querySelector("iframe");
+
+    if (iframe) {
+      iframe.addEventListener("load", () => {
+        calendlyBox.classList.add("calendly-loaded");
+      }, { once: true });
+
+      window.setTimeout(() => {
+        calendlyBox.classList.add("calendly-loaded");
+      }, 2500);
+
+      return true;
+    }
+
+    return false;
+  };
+
+  if (!markCalendlyLoaded() && "MutationObserver" in window) {
+    const calendlyObserver = new MutationObserver(() => {
+      if (markCalendlyLoaded()) {
+        calendlyObserver.disconnect();
+      }
+    });
+
+    calendlyObserver.observe(calendlyBox, { childList: true, subtree: true });
+  }
 }
