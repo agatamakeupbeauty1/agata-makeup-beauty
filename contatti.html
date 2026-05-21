@@ -4,6 +4,25 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Contatta Agata Beauty per makeup bridal, eventi, shooting e collaborazioni."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="it_IT"/>
+  <meta property="og:title" content="Contatti | Agata Beauty"/>
+  <meta property="og:description" content="Scrivi ad Agata Beauty per disponibilità, appuntamenti bridal, eventi, shooting e collaborazioni."/>
+  <meta property="og:image" content="assets/immagine_1.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contatti Agata Beauty",
+    "about": {"@type": "BeautySalon", "name": "Agata Beauty", "email": "agatabeauty06@gmail.com"},
+    "mainEntity": {
+      "@type": "ContactPoint",
+      "email": "agatabeauty06@gmail.com",
+      "contactType": "booking"
+    }
+  }
+  </script>
   <title>Contatti | Agata Beauty</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="style.css"/>
@@ -17,11 +36,11 @@
         <a href="servizi.html">Servizi</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="chi-sono.html">Chi sono</a>
-        <a href="contatti.html" class="active">Contatti</a>
+        <a href="contatti.html" class="active" aria-current="page">Contatti</a>
       </nav>
       <div class="nav-actions">
         <a href="prenota.html" class="btn btn-primary">Prenota ora</a>
-        <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">+</button>
+        <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false"><span></span><span></span></button>
       </div>
     </header>
 
@@ -45,10 +64,21 @@
         <div class="card reveal">
           <h3>Canali diretti</h3>
           <a class="contact-link" href="mailto:agatabeauty06@gmail.com">Email <span>agatabeauty06@gmail.com</span></a>
-          <a class="contact-link" href="https://wa.me/393000000000">WhatsApp <span>+39 300 000 0000</span></a>
           <a class="contact-link" href="https://www.instagram.com/agatamakeupbeauty/">Instagram <span>@agatamakeupbeauty</span></a>
           <a class="contact-link" href="https://www.tiktok.com/@agata_makeup1">TikTok <span>@agata_makeup1</span></a>
           <a class="contact-link" href="prenota.html">Calendario <span>prenota online</span></a>
+        </div>
+      </section>
+
+      <section class="section contact-guide">
+        <div class="section-head reveal">
+          <h2>Cosa scrivere nel primo messaggio.</h2>
+          <p>Più dettagli arrivano subito, più veloce diventa confermare disponibilità, tempi e preventivo.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal"><h3>Data e luogo</h3><p>Indica giorno, città, indirizzo indicativo e orario entro cui devi essere pronta.</p></article>
+          <article class="card reveal"><h3>Tipo di servizio</h3><p>Scrivi se si tratta di sposa, evento, shooting o più persone da preparare.</p></article>
+          <article class="card reveal"><h3>Stile desiderato</h3><p>Allega riferimenti, mood, abito o colori: aiutano a capire subito la direzione.</p></article>
         </div>
       </section>
 

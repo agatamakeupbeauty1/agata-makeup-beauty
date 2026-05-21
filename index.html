@@ -5,10 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Agata Beauty, makeup artist specializzata in bridal, eventi e soft glam naturale."/>
   <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="it_IT"/>
   <meta property="og:title" content="Agata Beauty | Makeup Artist Bridal e Soft Glam"/>
   <meta property="og:description" content="Makeup su misura per spose, eventi e shooting: luminosi dal vivo, impeccabili in foto e costruiti per durare."/>
   <meta property="og:image" content="assets/immagine_1.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Agata Beauty",
+    "description": "Makeup artist specializzata in bridal, eventi, shooting e soft glam naturale.",
+    "image": "assets/immagine_1.jpg",
+    "email": "agatabeauty06@gmail.com",
+    "sameAs": [
+      "https://www.instagram.com/agatamakeupbeauty/",
+      "https://www.tiktok.com/@agata_makeup1"
+    ],
+    "makesOffer": [
+      {"@type": "Offer", "name": "Bridal Experience"},
+      {"@type": "Offer", "name": "Event Glow"},
+      {"@type": "Offer", "name": "Editorial Beauty"}
+    ]
+  }
+  </script>
   <title>Agata Beauty | Makeup Artist Bridal e Soft Glam</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="style.css"/>
@@ -18,7 +38,7 @@
     <header class="nav">
       <a class="logo" href="index.html">Agata<span>Beauty</span></a>
       <nav class="nav-links" aria-label="Navigazione principale">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="servizi.html">Servizi</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="chi-sono.html">Chi sono</a>
@@ -26,7 +46,7 @@
       </nav>
       <div class="nav-actions">
         <a href="prenota.html" class="btn btn-primary">Prenota ora</a>
-        <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">+</button>
+        <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false"><span></span><span></span></button>
       </div>
     </header>
 
@@ -83,13 +103,13 @@
       <section class="section">
         <div class="portfolio-grid">
           <article class="portfolio-tile tall reveal">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=85" alt="Look beauty editoriale"/>
+            <img src="assets/portrait-editorial.jpg" alt="Dettaglio di makeup editoriale realizzato da Agata Beauty"/>
             <div class="tile-caption"><strong>Editorial glow</strong><span>pelle luminosa e linee pulite</span></div>
           </article>
           <div>
             <article class="portfolio-tile reveal">
-              <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1000&q=85" alt="Postazione makeup professionale"/>
-              <div class="tile-caption"><strong>Kit pro</strong><span>prodotti selezionati per durata e comfort</span></div>
+              <img src="assets/immagine_1.jpg" alt="Makeup soft glam luminoso realizzato da Agata Beauty"/>
+              <div class="tile-caption"><strong>Soft bridal</strong><span>prodotti selezionati per durata e comfort</span></div>
             </article>
             <article class="card reveal stack-gap">
               <h3>Ogni dettaglio conta.</h3>
@@ -107,6 +127,18 @@
           <article class="card reveal"><p>"Il makeup è rimasto perfetto fino a notte, ma la cosa più bella è che mi riconoscevo in ogni foto."</p><div class="service-meta"><span>Giulia</span><span>Sposa</span></div></article>
           <article class="card reveal"><p>"Agata ha capito subito il mio stile. Elegante, luminoso, zero effetto maschera."</p><div class="service-meta"><span>Martina</span><span>Evento</span></div></article>
           <article class="card reveal"><p>"Sul set è stata precisa, veloce e super attenta alla resa in camera."</p><div class="service-meta"><span>Sara</span><span>Brand shooting</span></div></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head reveal">
+          <h2>Prima di prenotare.</h2>
+          <p>Tre risposte rapide per capire tempi, prova e dettagli utili prima del primo messaggio.</p>
+        </div>
+        <div class="grid faq-grid">
+          <article class="card reveal"><h3>Quanto prima devo scrivere?</h3><p>Per matrimoni e date richieste, prima possibile. Per eventi singoli basta spesso qualche settimana, se la disponibilità è libera.</p></article>
+          <article class="card reveal"><h3>La prova sposa è inclusa?</h3><p>Nel percorso bridal è prevista una prova dedicata per definire pelle, intensità, palette e resa fotografica.</p></article>
+          <article class="card reveal"><h3>Ti sposti fuori sede?</h3><p>Sì, gli spostamenti si valutano in base a luogo, orari e numero di persone da preparare.</p></article>
         </div>
       </section>
 

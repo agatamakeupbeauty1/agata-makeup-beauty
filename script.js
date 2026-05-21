@@ -5,16 +5,34 @@ const calendlyBox = document.querySelector(".calendly-box");
 const counters = document.querySelectorAll(".count-up");
 
 if (menuToggle && nav) {
+  const closeMenu = () => {
+    nav.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Apri menu");
+  };
+
   menuToggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Chiudi menu" : "Apri menu");
   });
 
   nav.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
+      closeMenu();
     });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target)) {
+      closeMenu();
+    }
   });
 }
 
